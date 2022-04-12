@@ -1,3 +1,3 @@
 # MachineLearningExercise
 
-Exercises of course "Machine Learning" of AndrewNg.
+Exercises of course "Machine Learning" of Andrew-Ng.
