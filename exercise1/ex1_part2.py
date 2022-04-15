@@ -59,3 +59,10 @@ model = LinearRegression()
 model.fit(np.array(x[:,1:]), y.reshape(-1,1))
 print(model.coef_)
 print(model.intercept_)
+
+# 预测新数据之前注意先进行feature normalizatin
+x_new = np.array([1, 1650, 3])
+x_new[1] = (x_new[1] - size_mean) / size_std
+x_new[2] = (x_new[2] - bedrm_mean) / bedrm_std
+y_predict = np.dot(x_new, theta)
+print(f"Predicted result: {y_predict}")
